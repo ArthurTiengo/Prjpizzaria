@@ -1,49 +1,48 @@
-
-
-h1,h2,h3{
+h1, h2, h3 {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
     text-transform: uppercase;
-    color: red;
+    color: #D90404;
 }
 
-h4,h5,h6{
+h4, h5, h6 {
     font-family: 'Pacifico', cursive;
     text-align: center;
     color: #F2B705;
 }
 
-h1{
+h1 {
     font-size: 600%;
     font-weight: 200;
 }
 
-h2{
+h2 {
     font-size: 400%;
     font-weight: 200;
 }
 
-h2::after{
+h2::after {
     display: block;
     background-color: #078C31;
     height: 5px;
     width: 100px;
+    /*O content sempre tem que ser informado. Caso não tenha um texto ele fica vazio*/
+    content: "";
     margin: 40px auto 30px;
-    content: " ";
 }
 
-h4{
+h4 {
     font-size: 150%;
-    font-weight: 150%;
+    font-weight: 150;
     padding: 20px 0;
 }
 
-p,li,a{
+p, li, a {
     font-family: 'Open Sans', sans-serif;
     color: #404040;
 }
 
-p.destaque{
+p.destaque {
     font-size: 130%;
     line-height: 1.8;
     font-weight: 300;
@@ -51,69 +50,61 @@ p.destaque{
     width: 60%;
 }
 
-/*ELEMENTOS DO HEADER*/
+/*------------------------*/
+/*  ELEMENTOS DO HEADER   */
+/*------------------------*/
 
-header div.chamada h1{
-    color: #FFF;
-    text-shadow: 4px 6px 10px #000;
+header div.chamada h1 {
+    color: #ffff;
+    /* primeiro valor eixo horizontal, segundo vertical e terceiro espalhamento da sombra*/
+    text-shadow: 4px 6px 10px black;
 }
 
-header div.chamada h4{
+header div.chamada h4 {
     font-size: 250%;
-    text-shadow: 4px 6px 10px #000;
+    text-shadow: 4px 6px 10px black;
     margin-bottom: 55px;
 }
 
-header div.chamada a{
+header div.chamada a {
     font-size: 110%;
-    color: white;
+    color: #ffff;
     text-decoration: none;
     font-weight: 600;
     padding: 20px 80px;
     border-radius: 50px;
     display: inline-block;
-    /*é a transição suave de uma cor para outra, para utiliza-lo deverá ser informado a cor desejada em seguida porcentagem dessa cor que se deseja colocar*/
-    background: linear-gradient( rgba( 7, 140, 49, 55) 0%, rgba( 6, 89, 2, 35)100%);
+    /*é a transoção suave de uma cor para a outra, para utiliza-lo deverá ser informado a cor desejada em seguida porcentagem dessa cor que se deseja colocar*/
+    background: linear-gradient(rgba(7, 140, 49, 55) 0%, rgba(6, 89, 2, 35) 50%, rgba(6, 89, 2, 35) 100%);
 }
 
-header div.chamada{
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    top: 50%;
-    left: auto;
-    text-align: center;
-}
-
-section{
-    padding: 55px 0 80px;
-}
-
-
-/*DOMINGO PERFEITO*/
-
-section#domingo-perfeito{
-    display: flex;
-    width: 100%;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-div#domingo-perfeito-esquerda,
-div#domingo-perfeito-direita{
-    position: relative;
-    width: 15%;
-}
-
-div.pontos-chaves h4{
+div.pontos-chaves h4 {
     color: #404040;
 }
 
-div.pontos-chaves h4:after{
+div.pontos-chaves h4::after {
     display: block;
-    background-color: #078C31;
+    background-color: #078c31;
     height: 5px;
     width: 30%;
     margin: 20px auto 10px;
     content: " ";
+}
+
+/*------------------------*/
+/*     SEÇAO - PIZZA      */
+/*------------------------*/
+
+section.pizza p.destaque {
+    color: #ffff;
+    width: 40%;
+}
+
+section.pizza ul li, section.pizza ul li a {
+    color: #ffff;
+    list-style: none;
+    line-height: 1.9;
+    font-size: 90%;
+    text-transform: uppercase;
+    text-decoration: none;
 }
