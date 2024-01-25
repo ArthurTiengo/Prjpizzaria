@@ -268,3 +268,146 @@ div.testemunha-mestre ion-icon {
 div.testemunha-esquerda ion-icon {
     opacity: 0.5;
 }
+
+div.testemunha-centro {
+    width: 70%;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+    max-width: 1010px;
+    overflow: hidden;
+}
+
+div.testemunhos {
+    position: absolute;
+    left: 0;
+    width: 2680px;
+}
+
+section.testemunha div.testemunha-centro div.testemunhos ul {
+    display: inline-table;
+    /* inline-table faz com que o elemento fique em linha e dividida por colunas */
+    width: 300px;
+    background: #fff;
+    padding: 30px;
+    margin: 50px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    list-style: none;
+}
+
+section.testemunha div.testemunha-centro div.testemunhos ul h4 {
+    font-size: 140%;
+}
+
+section.testemunha div.testemunha-centro div.testemunhos ul p {
+    line-height: 1.5;
+    color: #404040;
+    font-size: 90%;
+}
+
+section.testemunha div.testemunha-centro div.testemunhos ul img {
+    width: 40%;
+    border-radius: 100%;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    border: 5px solid #f03733;
+}
+
+/*-----------------------------------*/
+
+/*------- SEÇAO - TRANSICAO 1 -------*/
+
+/*-----------------------------------*/
+
+div.transicao-testemunha-plano {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div.transicao-testemunha-plano div.decoracao1 {
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-tomate-manjericao-alho.jpg);
+    background-repeat: no-repeat;
+
+}
+
+div.transicao-testemunha-plano div.decoracao2 {
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-azeite.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+div.transicao-testemunha-plano div.decoracao3 {
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-detalhe-tomate.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/*-----------------------------------*/
+
+/*--------- SEÇAO - PLANOS ----------*/
+
+/*-----------------------------------*/
+
+section.plano-principal {
+    width: 100%;
+    height: 800px;
+}
+
+div.planos-janela {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.planos {
+    width: 250px;
+    height: 450px;
+    margin: 80px 30px;
+}
+
+div.planos-top {
+    width: 100%;
+    height: 350px;
+    background-color: #f7f7f7f7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+div.planos-bottom {
+    width: 100%;
+    height: 100px;
+    background-color: #078C31;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 2px 2px 3px #ccc;
+    cursor: pointer;
+}
+
+/*-----------------------------------*/
+
+/*-------------- FOOTER -------------*/
+
+/*-----------------------------------*/
+
+div.transicao-plano-rodape {
+    width: 100%;
+    height: 36px;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url(../_imagens/secao15-mesa-xadrez-clara.png);
+    background-repeat: repeat-x;
+    margin-top: 100px;
+}
