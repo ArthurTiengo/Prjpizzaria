@@ -58,12 +58,19 @@ header div.chamada h1 {
     color: #ffff;
     /* primeiro valor eixo horizontal, segundo vertical e terceiro espalhamento da sombra*/
     text-shadow: 4px 6px 10px black;
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
 
 header div.chamada h4 {
     font-size: 250%;
     text-shadow: 4px 6px 10px black;
     margin-bottom: 55px;
+    animation-name: HeaderH4-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
 }
 
 header div.chamada a {
@@ -76,6 +83,11 @@ header div.chamada a {
     display: inline-block;
     /*é a transoção suave de uma cor para a outra, para utiliza-lo deverá ser informado a cor desejada em seguida porcentagem dessa cor que se deseja colocar*/
     background: linear-gradient(rgba(7, 140, 49, 55) 0%, rgba(6, 89, 2, 35) 50%, rgba(6, 89, 2, 35) 100%);
+    animation-name:HeaderA-moverParaCima ;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
 }
 
 div.pontos-chaves h4 {

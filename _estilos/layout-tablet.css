@@ -74,6 +74,12 @@ div.planos{
     }
 }
 
+@media screen and (max-width:768) {
+    div.planos p {
+        font-size: 30px;
+    }
+}
+
 /*FOOTER*/
 footer div.mapa, footer div.info{
     width: 45%;
